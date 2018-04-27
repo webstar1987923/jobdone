@@ -1,0 +1,111 @@
+.Header {
+
+  &__search-box {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  &__search-input {
+    position: absolute;
+    width: 200px;
+    height: 36px;
+    display: block;
+    padding: 3px 24px 3px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2b2f32;
+    font-weight: 400;
+    letter-spacing: .14px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    text-align: left;
+    outline: none;
+    z-index: 1;
+    transition: all .25s ease;
+    opacity: .7;
+
+    @media (max-width: 1024px) {
+      width: 160px;
+    }
+
+    &:focus {
+      width: 340px;
+      opacity: 1;
+
+      @media (max-width: 1024px) {
+        width: 210px;
+      }
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    font-size: 20px;
+    left: 175px;
+    top: 8px;
+    color: #808080;
+    z-index: 2;
+    transition: left .25s ease;
+
+    @media (max-width: 1024px) {
+      left: 135px;
+    }
+  }
+
+  &__search-input:focus + &__search-icon {
+    left: 315px;
+
+    @media (max-width: 1024px) {
+      left: 185px;
+    }
+  }
+
+  &__search-dropdown {
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    transition: opacity .3s ease, top .3s ease;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 100;
+
+    &.opened {
+      top: 39px;
+      width: 340px;
+
+      @media (max-width: 1024px) {
+        width: 210px;
+      }
+    }
+  }
+
+  &__search-suggestion {
+    color: #808080 !important;
+    font-size: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none !important;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  &__search-dropdown-header {
+    text-transform: uppercase;
+    color: #858585;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background-color: #f7f7f7;
+  }
+
+  &__search-clear {
+    cursor: pointer;
+  }
+}

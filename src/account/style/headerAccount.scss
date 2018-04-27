@@ -1,0 +1,270 @@
+header.header-account {
+  .menu {
+    float: right;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+
+    &-sandwich {
+      &:hover {
+        background: #272B33;
+      }
+
+      cursor: pointer;
+      display: block;
+      line-height: 88px;
+      padding-left: 25px;
+
+      .icon {
+        user-select: none;
+        margin-right: 29px;
+        position: relative;
+        top: 0.3em;
+      }
+    }
+
+    &-greeting {
+      display: none;
+      font: $light 1.1em/1.2em $Lato;
+      padding: 28px 25px 25px 85px;
+
+      & > span {
+        display: block;
+        color: #a7cff2;
+      }
+    }
+
+    &-list {
+      display: none;
+
+      list-style: none;
+      padding: 10px 0 30px;
+
+      & > .menu-list-item {
+        display: block;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.07);
+        }
+
+        & > a {
+          font-family: $Lato;
+          font-size: 16px;
+          color: #FFFFFF;
+          font-weight: 100;
+          margin: 0 auto;
+          border-bottom: 1px dashed rgba(167, 207, 242, 0.52);
+          width: 90%;
+          display: block;
+          padding: 10px 0;
+          text-decoration: none;
+        }
+      }
+
+      & > .menu-extra-item {
+        display: block;
+        margin: 10px auto 0;
+        width: 90%;
+
+        & > a {
+          padding: 10px 0;
+          font-family: $Lato;
+          font-size: 17px;
+          color: #878787;
+          vertical-align: top;
+          text-decoration: none;
+        }
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+
+      .icon-settings {
+        background-position: -470px -197px;
+      }
+
+      .icon-logout {
+        background-position: -564px -197px;
+      }
+    }
+
+    &-close {
+      display: none;
+      position: absolute;
+      top: 29px;
+      right: 30px;
+      cursor: pointer;
+
+      .icon {
+        user-select: none;
+        position: relative;
+        font-size: 20px;
+        top: 0.3em;
+      }
+    }
+
+    .icon {
+      background-size: 827px !important;
+      background-image: url(../assets/images/icons/iconsoverlay.png);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+    }
+
+    .icon-sandwich {
+      border-bottom: 1px solid #FFF;
+      border-top: 1px solid #FFF;
+      height: 1px;
+      background: transparent;
+      padding: 7px 0 8px;
+      position: relative;
+
+      &:after {
+        top: 7px;
+        content: '';
+        display: block;
+        background: #FFF;
+        height: 1px;
+        width: 100%;
+      }
+    }
+
+    .profile {
+      display: none;
+    }
+    .profile-empty {
+      display: none;
+      height: 40px;
+    }
+
+    .avatar {
+      position: absolute;
+      left: 25px;
+      top: 20px;
+
+      & > img {
+        height: 50px;
+      }
+    }
+
+    &.opened {
+      position: fixed;
+      right: calc(100% / 2 - 578px);
+      top: 0;
+      width: 260px;
+      height: auto;
+      background: #272B33;
+      overflow: auto;
+      z-index: 10;
+      .menu-sandwich {
+        display: none;
+      }
+      .menu-close {
+        display: block;
+      }
+      &.logged {
+        .menu-close {
+          top: 60px;
+        }
+      }
+
+      .menu-greeting {
+        display: block;
+      }
+
+      .menu-list {
+        display: block;
+      }
+      // .profile {
+      //   margin: 20px 0 30px 0;
+      //   display: block;
+      //   text-align: center;
+      //   img {
+      //     height: 90px;
+      //   }
+      //   .text {
+      //     display: block;
+      //     margin-top: 17px;
+      //     font: $light 1.1em/16px Raleway;
+      //     strong {
+      //       display: block;
+      //       font-weight: $semi-bold;
+      //       font-size: 1.15em;
+      //     }
+      //   }
+      // }
+
+      & ~ .right {
+        display: none;
+      }
+    }
+  }
+
+  .right {
+    margin-right: 0;
+
+    .icons {
+      display: inline-block;
+      vertical-align: middle;
+
+      & > li {
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 40px;
+        height: 40px;
+
+        background: url("../../shared/assets/topicons.png");
+        background-repeat: no-repeat;
+        background-size: 100px;
+
+        cursor: pointer;
+
+        &.icons-messaging {
+          background-position: -5px -2px;
+        }
+
+        &.icons-notifications {
+          background-position: -55px -2px;
+        }
+
+        &:hover .header-dropdown {
+          display: block;
+        }
+      }
+    }
+
+    .profile {
+      margin-right: 0;
+      padding-right: 12px;
+    }
+
+    .balance {
+      position: relative;
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        margin-left: 10px;
+        font: $light 1.4em/100% $Lato;
+        strong {
+          display: block;
+          font-weight: $semi-bold;
+          font-size: 1.15em;
+        }
+      }
+      .avatar {
+        display: inline-block;
+        max-height: 50px;
+        vertical-align: middle;
+
+        & > img {
+          height: 50px;
+        }
+      }
+    } 
+  }
+}

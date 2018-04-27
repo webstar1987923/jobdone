@@ -1,0 +1,178 @@
+.header-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background: white;
+    background: #F2F2F2;
+    background: rgb(242, 242, 242);
+    border-style : Solid;
+    border-color : #E6E6E6;
+    border-color: rgb(230, 230, 230);
+    border-width : 1px;
+    box-shadow : 0px 3px 5px rgba(0, 0, 0, 0.11);
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=3, Color='#000000');
+    padding: 10px;
+    z-index: 1010;
+    margin: 0px -100px 0;
+    float: none;
+    text-align: left;
+    width: 254px;
+}
+
+.header-dropdown .header {}
+
+.header-dropdown .header h3 {
+    font-family: "lato";
+    font-size : 15px;
+    color : #808080;
+    font-weight: 200;
+    margin: 0 0 10px 0;
+    border-bottom-style: Solid;
+    border-color : #E6E6E6;
+    border-width : 1px;
+    padding: 0 0 10px 0;
+}
+
+.header-dropdown .header h3 strong {
+    font-weight: 400;
+}
+
+.header-dropdown .notification-list ul li {
+    border-bottom-style: Dashed;
+    border-color : #E6E6E6;
+    border-color : rgba(230, 230, 230, 1);
+    border-width : 1px;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+    -webkit-transition-property: all;
+    -webkit-transition-duration:0.3s;
+    -o-transition-property:all;
+    -o-transition-duration:0.3s;
+    -moz-transition-property:all;
+    -moz-transition-duration:0.3s;
+    -ms-transition-property:all;
+    -ms-transition-duration:0.3s;
+}
+
+.header-dropdown .notification-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-dropdown .notification-list ul li a {}
+
+
+.header-dropdown .notification-list ul li a span.image.no-pic, .header-dropdown .notification-list ul li a span.image.has-pic {
+    width: 27px;
+    height: 27px;
+    display: block;
+    float: left;
+    background-size: 299px;
+    border-radius: 300px;
+    margin: 0 10px 0 0;
+}
+
+.header-dropdown .notification-list ul li a span.readbox {
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+    border-radius: 90px;
+    background: #e2e2e2;
+}
+
+.header-dropdown .notification-list ul li a.unread span.readbox {
+    background: #C1272D;
+}
+
+.header-dropdown .notification-list ul li a span.inline {
+    float: left;
+    width: 71%;
+}
+
+.header-dropdown .notification-list ul li a span.inline p {
+    font-family: "lato";
+    font-size : 13px;
+    color : #666666;
+    line-height: normal;
+    margin: 0;
+}
+
+.header-dropdown .notification-list ul li a span.inline p strong {
+    /* font-weight: 400; */
+}
+
+.header-dropdown .notification-list ul li:hover {
+    background: #f9f9f9;
+}
+
+.header-dropdown .notification-list ul li.last {}
+
+.header-dropdown .notification-list ul li.last span {
+    font-family: "lato";
+    font-size: 11px;
+    letter-spacing : 1.44px;
+    color : #B3B3B3;
+    text-align: center;
+    display: block;
+}
+
+.header-dropdown .notification-list ul li.last:hover {
+    background: none;
+}
+
+.header-dropdown .notification-list ul li.last {
+    border: none;
+}
+
+
+.header-dropdown .notification-list ul li a.unread span.readbox {
+    background: #29ABE2;
+}
+
+.header-dropdown .notification-list ul li a.read span.readbox {
+    border-style: Solid;
+    border-color : rgba(128, 128, 128, 1);
+    background: rgba(134, 40, 40, 0) !important;
+    border-width: 1px;
+}
+
+.header-dropdown .notification-list ul li a span.image.no-pic, .header-dropdown .notification-list ul li a span.image.has-pic {
+    width: 37px;
+    height: 37px;
+    display: block;
+    float: left;
+    background-size: 406px;
+    border-radius: 300px;
+    margin: 0 10px 0 0;
+}
+
+.header-dropdown .notification-list ul li a span.image.has-pic img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+.header-dropdown .notification-list ul li a span.offline img {
+    border-style: Solid;
+    border-color : #E6E6E6;
+    border-color : rgba(230, 230, 230, 1);
+    border-width : 1px;
+}
+
+.header-dropdown .notification-list ul li a span.online img {
+    border-style: Solid;
+    border-color : #8CC63F;
+    border-color : rgba(140, 198, 63, 1);
+    border-width: 1px;
+}
+
+.header-dropdown .notification-list ul li.last a {
+    font-family: "lato";
+    font-size: 12px;
+    letter-spacing : 1.44px;
+    color : #29ABE2;
+    text-align: center;
+    display: block;
+}
